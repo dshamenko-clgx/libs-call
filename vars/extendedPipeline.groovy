@@ -6,9 +6,11 @@ def call(body) {
 
   pipeline {
     stages {
-     stage('Prepare') {
-       steps { echo config.foo }
-     } 
+      stage('Prepare') {
+        steps { 
+          echo pipelineParams.foo
+        }
+      }
     }
   }
  
