@@ -6,7 +6,7 @@ def call(body) {
 
   pipeline {
     stages {
-     stages('Prepare') {
+     stage('Prepare') {
        steps { echo config.foo }
      } 
     }
